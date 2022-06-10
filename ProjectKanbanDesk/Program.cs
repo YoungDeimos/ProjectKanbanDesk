@@ -13,10 +13,7 @@ namespace ProjectKanbanDesk
         {
             var builder = WebApplication.CreateBuilder(args);
             string connectionStory = "Server=(localdb)\\mssqllocaldb;Database=storydb;Trusted_Connection=True;";
-            builder.Services.AddDbContext<StoryContext>(options => options.UseSqlServer(connectionStory));
-
-            string connectionUser = "Server=(localdb)\\mssqllocaldb;Database=userdb;Trusted_Connection=True;";
-            builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionUser));
+            builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connectionStory));
             // Add services to the container.
 
             builder.Services.AddControllers();

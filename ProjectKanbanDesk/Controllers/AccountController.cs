@@ -8,31 +8,21 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace ProjectKanbanDesk.Controllers
 {
-    public class AccountController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AccountController : ControllerBase
     {
-        UserContext db;
+        ApplicationContext db;
 
-        public AccountController(UserContext context)
+        public AccountController(ApplicationContext context)
         {
             db = context;
         }
-
-        public IActionResult Index()
-        {
-            return View(db.Users.ToList());
-        }
-
-        [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterModel model)
+        public async Task<ActionResult<User>> Register(RegisterModel model)
         {
-            if (ModelState.IsValid)
+            if(ModelState.IsValid)
             {
                 User user = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
                 if (user == null)
@@ -42,22 +32,16 @@ namespace ProjectKanbanDesk.Controllers
 
                     await Authenticate(model.Email);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction();
                 }
                 else
                     ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
-            return View(model);
+            return Ok(model);
         }
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel model)
+        public async Task<ActionResult<User>> Login(LoginModel model)
         {
             if (ModelState.IsValid)
             {
@@ -66,12 +50,13 @@ namespace ProjectKanbanDesk.Controllers
                 {
                     await Authenticate(model.Email);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction();
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
-            return View(model);
+            return Ok(model);
         }
+
         private async Task Authenticate(string userName)
         {
             var claims = new List<Claim>

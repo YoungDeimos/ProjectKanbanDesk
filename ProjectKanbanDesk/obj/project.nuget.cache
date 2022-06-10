@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b+rj9OlVQZArs84qYriWZQ6WiQhGqaDeuOLV27VC0SUMEMvTY8LYbcLc7OJkaQKirDmZ9IQVaVPWOazCLWhbmA==",
+  "dgSpecHash": "hkmOABnnV5zkxbQFek/CV0SIuKlmtT+PgGpUK/dhXVptcYYNdlB3rzxsCCNY6J9qvZmBfLqt3tiToW7smW8iuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

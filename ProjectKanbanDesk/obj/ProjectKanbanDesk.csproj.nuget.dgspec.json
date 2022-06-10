@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj": {}
+    "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj": {
+    "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
         "projectName": "ProjectKanbanDesk",
-        "projectPath": "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\ProjectKanbanDesk.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\ProjectKanbanDesk\\ProjectKanbanDesk\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\ProjectKanbanDesk\\ProjectKanbanDesk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

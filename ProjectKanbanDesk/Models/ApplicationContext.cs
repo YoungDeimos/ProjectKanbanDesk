@@ -2,10 +2,11 @@
 
 namespace ProjectKanbanDesk.Models    
 {
-    public class StoryContext : DbContext
+    public class ApplicationContext : DbContext
     {
         public DbSet<Story> Stories { get; set; } = null!;
-        public StoryContext(DbContextOptions<StoryContext> options)
+        public DbSet<User> Users { get; set; } = null!;
+        public ApplicationContext(DbContextOptions<ApplicationContext> options)
         : base(options)
         {
             Database.EnsureCreated();
